@@ -6,10 +6,12 @@ function lover(gf,bf,count) {
   for (let i = 0; i < print; i++) {
     const love_you = 'I love You ';
     let lisec = document.createElement("li");
+    lisec.className ='list-group-item';
     lisec.innerHTML = love_you + ' ' +'too' + ' ' + bf;
     data2.appendChild(lisec);
 
     let li1 = document.createElement("li");
+    li1.className ='list-group-item';
     li1.innerHTML = love_you + gf;
     data.appendChild(li1);
   }
