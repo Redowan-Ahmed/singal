@@ -19,7 +19,7 @@ const getbfname = document.querySelector('input.bfname');
 const getrangee = document.querySelector('input.getrange');
 document.querySelector('a#submit').addEventListener('click',test);
 function test() {
-  if (getrangee.value) {
+  if (getgfname.value && getbfname.value && getrangee.value) {
     lover(getgfname.value ,getbfname.value , getrangee.value )
   }
 }
