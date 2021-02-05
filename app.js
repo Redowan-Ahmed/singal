@@ -4,7 +4,7 @@ function lover(gf,bf,count) {
   const data = document.querySelector('ol')
   const data2 = document.querySelector('ol.sec')
   for (let i = 0; i < print; i++) {
-    const love_you = 'I fuck You ';
+    const love_you = ' I fuck You ';
     let lisec = document.createElement("li");
     lisec.className ='list-group-item';
     lisec.innerHTML = love_you + ' ' +'too' + ' ' + bf;
