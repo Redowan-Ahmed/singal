@@ -1,5 +1,5 @@
 
-function lover(gf,bf,count) {
+ function lover(gf,bf,count) {
   const print = count;
   const data = document.querySelector('ol')
   const data2 = document.querySelector('ol.sec')
@@ -22,6 +22,10 @@ const getrangee = document.querySelector('input.getrange');
 document.querySelector('a#submit').addEventListener('click',test);
 function test() {
   if (getgfname.value && getbfname.value && getrangee.value) {
-    lover(getgfname.value ,getbfname.value , getrangee.value )
+    lover(getgfname.value ,getbfname.value ,getrangee.value );
+    let reset = document.querySelector('a#submit');
+    reset.remove();
+    let reset2 = document.querySelector('a#reset');
+    reset2.style.display = "block";
   }
 }
